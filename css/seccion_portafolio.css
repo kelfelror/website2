@@ -1,0 +1,84 @@
+/*Seccion Sobre Nosotros*/
+main .seccion_sobre_nosotros{
+ padding: 30px 0 60px 0;
+}
+.contenedor_sobre_nosotros{
+ display: flex;
+ justify-content: space-evenly;
+}
+.imagen_acerca_de{
+ width: 30%;
+}
+.seccion_sobre_nosotros .contenido_textos{
+ width: 40%;
+}
+.contenido_textos{
+ padding-top: 60px;
+}
+.contenido_textos h3{
+ margin-bottom: 15px;
+}
+.contenido_textos h3 span{
+ background: #4d0686;
+ color: #fff;
+ border-radius: 50%;
+ display: inline-block;
+ text-align: center;
+ width: 30px;
+ height: 30px;
+ padding: 2px;
+ box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+ margin-right: 5px;
+}
+.contenido_textos p{
+ padding: 0px 0px 30px 15px;
+ font-weight: 300;
+ text-align: justify;
+}
+Creamos un archivo con el nombre seccion_portafolio.css para guardar el código CSS del diseño de
+la galería fotográfica de nuestro sitio web, así:
+/*Seccion Portafolio*/
+.seccion_portafolio{
+ background: #f2f2f2;
+}
+.galeria_portafolio{
+ display: flex;
+ justify-content: space-evenly;
+ flex-wrap: wrap;
+}
+.imagen_portafolio{
+ width: 24%;
+ margin-bottom: 10px;
+ overflow: hidden;
+ position: relative;
+ cursor: pointer;
+ box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+.imagen-port > img{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ display: block;
+}
+.hover_galeria{
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ top: 0;
+ transform: scale(0);
+ background: hsla(273,91%,27%, 0.7);
+ transition: transform .5s;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+.hover_galeria img{
+ width: 50px;
+}
+.hover_galeria p{
+ color: #fff;
+}
+.imagen_portafolio:hover .hover_galeria{
+ transform: scale(1);
+}
